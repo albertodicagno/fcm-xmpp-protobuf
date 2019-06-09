@@ -18,3 +18,11 @@ message DownstreamMessageRequest {
     google.protobuf.Struct data = 11;
     google.protobuf.Struct notification = 12;
 }
+
+message DownstreamMessageResponse {
+    string from = 1;
+    string message_id = 2;
+    string message_type = 3;
+    string error = 4;
+    string error_description = 5;
+}
