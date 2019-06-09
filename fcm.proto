@@ -26,3 +26,10 @@ message DownstreamMessageResponse {
     string error = 4;
     string error_description = 5;
 }
+
+message UpstreamMessage {
+    string from = 1;
+    string category = 2;
+    string message_id = 3;
+    string data = 4;
+}
