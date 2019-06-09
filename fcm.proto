@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "google/protobuf/struct.proto";
+
+package fcm_xmpp_protobuf;
+
+message DownstreamMessageRequest {
+    string to = 1;
+    string condition = 2;
+    string message_id = 3;
+    string collapse_key = 4;
+    string priority = 5;
+    bool content_available = 6;
+    bool mutable_content = 7;
+    int32 time_to_live = 8;
+    bool delivery_receipt_requested = 9;
+    bool dry_run = 10;
+    google.protobuf.Struct data = 11;
+    google.protobuf.Struct notification = 12;
+}
