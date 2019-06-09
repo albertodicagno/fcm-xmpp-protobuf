@@ -33,3 +33,9 @@ message UpstreamMessage {
     string message_id = 3;
     string data = 4;
 }
+
+message ACKMessage {
+    string to = 1;
+    string message_id = 2;
+    string message_type = 3;
+}
